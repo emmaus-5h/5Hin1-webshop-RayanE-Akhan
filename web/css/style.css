@@ -36,7 +36,7 @@ footer {
   min-height:10em
 }
 
-/* index page */
+/* gender page */
 .product{
   width: 100%; 
   height: inherit; 
@@ -72,12 +72,19 @@ ul {
   margin-top:20px;
   list-style: none; 
   padding-left: 5px; 
-  font-size: 15px"
+  font-size: "15px"
 }
-
 
 .product_row  .product-properties  li {
   width: 25%;
   float: left;
 }
 
+/* nav-bar */
+nav a {
+    list-style-type: none;
+    margin: auto;
+    padding: 5px;
+    overflow: hidden;
+    border-radius: 25px;
+}
