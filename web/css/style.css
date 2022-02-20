@@ -81,10 +81,27 @@ ul {
 }
 
 /* nav-bar */
-nav a {
+.navbar { 
     list-style-type: none;
     margin: auto;
-    padding: 5px;
+    padding-left: 180px;
     overflow: hidden;
     border-radius: 25px;
+}
+
+.navbar-brand {
+    display: block;
+    color: black;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+    border-radius: 25px;
+}
+
+a.navbar-brand:hover {
+  color: black;
+}
+
+h1 {
+  text-align: center;
 }
