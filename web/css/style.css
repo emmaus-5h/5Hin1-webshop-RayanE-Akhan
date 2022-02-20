@@ -1,5 +1,14 @@
 /* all pages */
 
+
+body {
+  background-image: url("sneaker.jpg");
+  background-repeat: no-repeat;
+  background-position: ;
+  background-size: 2000px;
+}
+
+
 footer {
   margin: 20px;
   font-size: 12px;
@@ -99,7 +108,7 @@ ul {
 }
 
 a.navbar-brand:hover {
-  color: black;
+  color: rgb(0, 0, 0);
 }
 
 h1 {
