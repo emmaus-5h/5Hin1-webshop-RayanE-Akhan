@@ -82,10 +82,26 @@ ul {
 
 /* nav-bar */
 .navbar { 
-    color: black;
+    list-style-type: none;
     margin: auto;
-    text-align: center;
-    padding-left: 13%;
+    padding-left: 180px;
     overflow: hidden;
     border-radius: 25px;
+}
+
+.navbar-brand {
+    display: block;
+    color: black;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+    border-radius: 25px;
+}
+
+a.navbar-brand:hover {
+  color: black;
+}
+
+h1 {
+  text-align: center;
 }
