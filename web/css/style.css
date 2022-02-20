@@ -81,10 +81,11 @@ ul {
 }
 
 /* nav-bar */
-nav a {
-    list-style-type: none;
+.navbar { 
+    color: black;
     margin: auto;
-    padding: 5px;
+    text-align: center;
+    padding-left: 13%;
     overflow: hidden;
     border-radius: 25px;
 }
