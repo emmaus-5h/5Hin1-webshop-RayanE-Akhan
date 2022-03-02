@@ -93,9 +93,10 @@ ul {
 .navbar { 
     list-style-type: none;
     margin: auto;
+    background-color: rgb(235, 232, 232);
     padding-left: 180px;
     overflow: hidden;
-    border-radius: 25px;
+
 }
 
 .navbar-brand {
@@ -104,7 +105,7 @@ ul {
     text-align: center;
     padding: 14px 16px;
     text-decoration: none;
-    border-radius: 25px;
+    border-block-end: 1px;
 }
 
 a.navbar-brand:hover {
@@ -113,4 +114,27 @@ a.navbar-brand:hover {
 
 h1 {
   text-align: center;
+}
+
+/* card */
+.card-img, .card-img-top {
+  height: auto;
+  max-height: auto;
+}
+
+a:hover {
+  color: black;
+}
+
+a {
+  color: black;
+}
+
+.card {
+  width: 240px;
+}
+
+/* winkelwagen knop */
+a.btn {
+  left: 500px;
 }
