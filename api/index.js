@@ -68,7 +68,9 @@ function getProducts(request, response) {
   console.log('API ontvangt /api/products/', request.query)
   let data = []
   const sqlOpdracht = 
-  db.prepare('SELECT products.id AS id, products.name AS name, products.description AS description, products.code AS code, products.price AS price, products.category AS category, stocks.stockinfo AS stock FROM products JOIN stocks ON stocks.id = products.stock_id ORDER BY name ASC')
+  db.prepare('SELECT products.id AS id, products.name AS name, products.description AS description, products.code AS code, products.price AS price, products.category AS category, stocks.instock AS stock FROM products INNER JOIN stocks ON stocks.id = products.stock_id ORDER BY name ASC')
+
+  // interest.name AS interest, INNER JOIN interest ON interest.id = products.interest_id
   
   data = sqlOpdracht.all()
   // console.log(JSON.stringify(data, null, 2))

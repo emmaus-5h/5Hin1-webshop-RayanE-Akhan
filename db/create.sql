@@ -18,7 +18,7 @@ CREATE TABLE products (
 --stocks 1:n relatie
   CREATE TABLE stocks (
   id INTEGER PRIMARY KEY AUTOINCREMENT,
-  stockinfo VARCHAR(150)
+  instock VARCHAR(150)
   );
 
 --resale price n:m relatie
@@ -37,7 +37,7 @@ CREATE TABLE sizes (
 --interest 1:n relatie
     CREATE TABLE interest (
   id INTEGER PRIMARY KEY AUTOINCREMENT,
-  interest VARCHAR
+  name VARCHAR
 );
 
   
@@ -61,33 +61,33 @@ CREATE TABLE sizes (
 
 
 --mannen
-insert into products (name, description, code, price, stock_id, category) values ('Air Force 1 White', 'Mauris enim leo, rhoncus sed, vestibulum sit amet, cursus id.', '816905633-0', 10.5, 2, 'male');
+insert into products (name, description, code, price, stock_id, category, interest_id) values ('Air Force 1 White', 'Mauris enim leo, rhoncus sed, vestibulum sit amet, cursus id.', '816905633-0', 10.5, 1, 'male', 1);
 --vrouwen
-insert into products (name, description, code, price, stock_id, category) values ('Jordan 1 Mocha', 'Nulla ut erat id mauris vulputate elementum. Nullam varius.', '077030122-3', 11, 1, 'female');
+insert into products (name, description, code, price, stock_id, category, interest_id) values ('Jordan 1 Mocha', 'Nulla ut erat id mauris vulputate elementum. Nullam varius.', '077030122-3', 11, 1, 'female', 1);
 --mannen
 insert into products (name, description, code, price, stock_id, category) values ('Yeezy Boost 350 V2 Cinder', 'Pellentesque at nulla. Suspendisse potenti.', '445924201-X', 13.5, 2, 'male');
 --vrouwen  
-insert into products (name, description, code, price, stock_id, category) values ('Yeezy 700 Boost Inertia', 'Duis bibendum, felis sed interdum venenatis, turpis enim blandit mi, in porttitor pede justo eu massa.', '693155505-7', 13.5, 1, 'female');
+insert into products (name, description, code, price, stock_id, category) values ('Yeezy 700 Boost Inertia', 'Duis bibendum, felis sed interdum venenatis, turpis enim blandit mi, in porttitor pede justo eu massa.', '693155505-7', 13.5, 2, 'female');
 --mannen  
-insert into products (name, description, code, price, stock_id, category) values ('Nike Air Max 1 Tinker Schematic', 'Nulla ut erat id mauris vulputate elementum. Nullam varius. Nulla facilisi.', '686928463-6', 14, 1, 'male');
+insert into products (name, description, code, price, stock_id, category) values ('Nike Air Max 1 Tinker Schematic', 'Nulla ut erat id mauris vulputate elementum. Nullam varius. Nulla facilisi.', '686928463-6', 14, 2, 'male');
 --vrouwen  
-insert into products (name, description, code, price, stock_id, category) values ('Christian Dior B23 Sneaker', 'Nam ultrices, libero non mattis pulvinar, nulla pede ullamcorper augue, a suscipit nulla elit ac nulla.', '492662523-7', 14, 2, 'female');
+insert into products (name, description, code, price, stock_id, category, interest_id) values ('Christian Dior B23 Sneaker', 'Nam ultrices, libero non mattis pulvinar, nulla pede ullamcorper augue, a suscipit nulla elit ac nulla.', '492662523-7', 14, 1, 'female', 1);
 --kids  
-insert into products (name, description, code, price, stock_id, category) values ('Dunk Low Michigan', 'sam ultrices, libero non mattis pulvinar, nulla pede ullamcorper augue, a suscipit nulla elit ac nulla.', '421667523-7', 14, 2, 'kids');
+insert into products (name, description, code, price, stock_id, category, interest_id) values ('Dunk Low Michigan', 'sam ultrices, libero non mattis pulvinar, nulla pede ullamcorper augue, a suscipit nulla elit ac nulla.', '421667523-7', 14, 1, 'kids', 1);
 --vrouwen  
-insert into products (name, description, code, price, stock_id, category) values ('Originals Ozweego', 'Nam ultrices, libero non mattis pulvinar, nulla pede ullamcorper augue, a suscipit nulla elit ac nulla.', '3420096523-7', 14, 1, 'female');
+insert into products (name, description, code, price, stock_id, category) values ('Originals Ozweego', 'Nam ultrices, libero non mattis pulvinar, nulla pede ullamcorper augue, a suscipit nulla elit ac nulla.', '3420096523-7', 14, 2, 'female');
 --kids 
-insert into products (name, description, code, price, stock_id, category) values ('Jordan 1 Retro High Shadow 2.0', 'Nam ultrices, libero non mattis pulvinar, nulla pede ullamcorper augue, a suscipit nulla elit ac nulla.', '3420096523-7', 14, 2, 'kids');
+insert into products (name, description, code, price, stock_id, category) values ('Jordan 1 Retro High Shadow 2.0', 'Nam ultrices, libero non mattis pulvinar, nulla pede ullamcorper augue, a suscipit nulla elit ac nulla.', '3420096523-7', 14, 1, 'kids');
 --kids
-  insert into products (name, description, code, price, stock_id, category) values ('Air Max Plus Supreme Black', 'dam ultrices, libero non mattis pulvinar, nulla pede ullamcorper augue, a suscipit nulla elit ac nulla.', '3420096523-7', 14, 1, 'kids');
+  insert into products (name, description, code, price, stock_id, category) values ('Air Max Plus Supreme Black', 'dam ultrices, libero non mattis pulvinar, nulla pede ullamcorper augue, a suscipit nulla elit ac nulla.', '3420096523-7', 14, 2, 'kids');
 --kids  
   insert into products (name, description, code, price, stock_id, category) values ('Air Force 1 Black', 'Nam ultrices, libero non mattis pulvinar, nulla pede ullamcorper augue, a suscipit nulla elit ac nulla.', '3420096523-7', 14, 2, 'kids');
 --mannen
-insert into products (name, description, code, price, stock_id, category) values ('Air Max 97', 'Nam ultrices, libero non mattis pulvinar, nulla pede ullamcorper augue, a suscipit nulla elit ac nulla.', '3420096523-7', 14, 1, 'male');
+insert into products (name, description, code, price, stock_id, category) values ('Air Max 97', 'Nam ultrices, libero non mattis pulvinar, nulla pede ullamcorper augue, a suscipit nulla elit ac nulla.', '3420096523-7', 14, 2, 'male');
 
 --stocks
-insert into stocks (stockinfo) values ('Almost sold out');
-insert into stocks (stockinfo) values ('Enough in stock');
+insert into stocks (instock) values ('Almost sold out');
+insert into stocks (instock) values ('Enough in stock');
 
 --sizes
 --insert into sizes (name) values ('XS');  
