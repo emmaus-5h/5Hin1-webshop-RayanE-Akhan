@@ -24,13 +24,12 @@
 
   <!-- menubalk -->
 	<nav class="navbar">
-		<a class="navbar-brand" href="/">home</a>
-    <a class="navbar-brand" href="/release.html">new release</a>
-    <a class="navbar-brand" href="/male.html">male</a>
-    <a class="navbar-brand" href="/female.html">female</a>
-    <a class="navbar-brand" href="/kids.html">kids</a>
-    <a class="navbar-brand" href="/contact.html">contact</a>
-
+		<a class="navbar-brand" href="/index.html">Home</a>
+    <a class="navbar-brand" href="/release.html">New Release</a>
+    <a class="navbar-brand" href="/male.html">Male</a>
+    <a class="navbar-brand" href="/female.html">Female</a>
+    <a class="navbar-brand" href="/kids.html">Kids</a>
+    <a class="navbar-brand" href="/contact.html">Contact</a>
 
 		<button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
         <span class="navbar-toggler-icon"></span>
@@ -50,7 +49,7 @@
   <!-- lijst met producten, wordt gevuld door javascript -->
 	<main id="index">
 		<div class="container">
-			<h5>Artikelen</h5>
+			<h5>Female products</h5>
 			<p>Hier zie je een lijst met artikelen die je bij mij kunt bestellen.</p>
 			<p>klik op een artikel voor meer informatie<p>
 					<p>klik op de "winkelwagentje" om het artikel in je winkelwagen te stoppen</p>
@@ -60,7 +59,7 @@
 		<div class="col-sm">
 			<div class="card" onclick="openArticlePage(this)">
 				<h5 class="card-header product_title"></h5>
-				<img width="200" class="product_image card-img-top">
+				<img class="product_image card-img-top">
 				<div class="card-body">
 					<p class="product_description card-text"></p>
 					<ul class="product-properties">
@@ -117,9 +116,14 @@
       app.appendChild(container)
         
             var data = JSON.parse(this.response) // vertaal response van API naar array met producten
+      
             for (let row in data) { // herhaal voor elke product
               const product = data[row]
               var name = product.name.substr(0, 35)
+// ..   
+              if (product.category == 'female') {
+                
+              
               if(name.length < product.name.length) {
                 name = name + '...'
               }
@@ -135,6 +139,7 @@
               clone.querySelector(".product_image").src =`/images/${product.id}.jpg`
               container.appendChild(clone)
             }
+              } 
           }
 	</script>
 
