@@ -93,7 +93,7 @@ ul {
 .navbar { 
     list-style-type: none;
     margin: auto;
-    background-color: rgb(235, 232, 232);
+    background-color: rgb(255, 0, 0);
     padding-left: 15%;
     overflow: hidden;
 
@@ -132,6 +132,10 @@ a {
 
 .card {
   width: 240px;
+}
+
+.product_stock {
+  padding: 25%;
 }
 
 /* winkelwagen knop */
