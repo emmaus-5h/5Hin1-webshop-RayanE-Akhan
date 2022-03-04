@@ -61,27 +61,27 @@ CREATE TABLE deliverytime (
 --mannen
 insert into products (name, description, code, price, resell, stock_id, interest_id, supply_id, time_id, category) values ('Air Force 1 White', 'One of the most worn sneakers of this decade.', '816905633-0', 110, 85, 1, 1, 1, 1, 'male');
 
-insert into products (name, description, code, price, resell, stock_id, interest_id, supply_id, time_id, category) values ('Yeezy Boost 350 V2 Cinder', 'Pellentesque at nulla. Suspendisse potenti.', '445924201-X', 13.5, 10, 2, 2, 3, 3, 'male');
+insert into products (name, description, code, price, resell, stock_id, interest_id, supply_id, time_id, category) values ('Yeezy Boost 350 V2 Cinder', 'A beautiful sneaker made by the artist kanye.', '445924201-X', 220, 350, 2, 2, 3, 3, 'male');
   
-insert into products (name, description, code, price, resell, stock_id, interest_id, supply_id, time_id, category) values ('Nike Air Max 1 Tinker Schematic', 'Nulla ut erat id mauris vulputate elementum. Nullam varius. Nulla facilisi.', '686928463-6', 14, 10, 2, 2, 1, 1, 'male'); 
+insert into products (name, description, code, price, resell, stock_id, interest_id, supply_id, time_id, category) values ('Nike Air Max 1 Tinker Schematic', 'A beautiful sneaker with fantastic finish.', '686928463-6', 150, 250, 2, 2, 1, 1, 'male'); 
 
 insert into products (name, description, code, price, resell, stock_id, interest_id, supply_id, time_id, category) values ('Air Max 97', 'A very comfortable sneaker with a lot of colorways', '3420096523-7', 180, 130, 2, 2, 1, 1, 'male');
 --vrouwen
-insert into products (name, description, code, price, resell, stock_id, interest_id, supply_id, time_id, category) values ('Jordan 1 Mocha', 'Nulla ut erat id mauris vulputate elementum. Nullam varius.', '077030122-3', 11, 10, 1, 1, 1, 1, 'female');
+insert into products (name, description, code, price, resell, stock_id, interest_id, supply_id, time_id, category) values ('Jordan 1 Mocha', 'One of the most used silhouettes with a beautiful suede finsh.', '077030122-3', 160, 450, 1, 1, 1, 1, 'female');
  
-insert into products (name, description, code, price, resell, stock_id, interest_id, supply_id, time_id, category) values ('Yeezy 700 Boost Inertia', 'Duis bibendum, felis sed interdum venenatis, turpis enim blandit mi, in porttitor pede justo eu massa.', '693155505-7', 13.5, 10, 2, 2, 3, 3, 'female');
+insert into products (name, description, code, price, resell, stock_id, interest_id, supply_id, time_id, category) values ('Yeezy 700 Boost Inertia', 'A beautiful colourway matching with a perfect silhouette.', '693155505-7', 300, 480, 2, 2, 3, 3, 'female');
 
-insert into products (name, description, code, price, resell, stock_id, interest_id, supply_id, time_id, category) values ('Christian Dior B23 Sneaker', 'Nam ultrices, libero non mattis pulvinar, nulla pede ullamcorper augue, a suscipit nulla elit ac nulla.', '492662523-7', 14, 10, 1, 1, 2, 2, 'female');
+insert into products (name, description, code, price, resell, stock_id, interest_id, supply_id, time_id, category) values ('Christian Dior B23 Sneaker', 'A iconic silhouette with a luxury finish.', '492662523-7', 900, 1100, 1, 1, 2, 2, 'female');
 
-insert into products (name, description, code, price, resell, stock_id, interest_id, supply_id, time_id, category) values ('Yeezy 500 Taupe Light', 'Nam ultrices, libero non mattis pulvinar, nulla pede ullamcorper augue, a suscipit nulla elit ac nulla.', '3420096523-7', 14, 10, 2, 2, 3, 3, 'female');
+insert into products (name, description, code, price, resell, stock_id, interest_id, supply_id, time_id, category) values ('Yeezy 500 Taupe Light', 'A new sneaker currently on the market with a bold design.', '3420096523-7', 200, 225, 2, 2, 3, 3, 'female');
 --kids  
-insert into products (name, description, code, price, resell, stock_id, interest_id, supply_id, time_id, category) values ('Dunk Low Michigan', 'sam ultrices, libero non mattis pulvinar, nulla pede ullamcorper augue, a suscipit nulla elit ac nulla.', '421667523-7', 14, 10, 1, 1, 1, 1, 'kids');
+insert into products (name, description, code, price, resell, stock_id, interest_id, supply_id, time_id, category) values ('Dunk Low Michigan', 'A iconic design in the colours of the university of Michigan.', '421667523-7', 85, 200, 1, 1, 1, 1, 'kids');
 
-insert into products (name, description, code, price, resell, stock_id, interest_id, supply_id, time_id, category) values ('Jordan 1 Retro High Shadow 2.0', 'Nam ultrices, libero non mattis pulvinar, nulla pede ullamcorper augue, a suscipit nulla elit ac nulla.', '3420096523-7', 14, 10, 1, 1, 1, 1, 'kids');
+insert into products (name, description, code, price, resell, stock_id, interest_id, supply_id, time_id, category) values ('Jordan 1 Retro High Shadow 2.0', 'A iconic silhouette with a beautiful colourway.', '3420096523-7', 130, 200, 1, 1, 1, 1, 'kids');
 
-  insert into products (name, description, code, price, resell, stock_id, interest_id, supply_id, time_id, category) values ('Air Max Plus Supreme Black', 'dam ultrices, libero non mattis pulvinar, nulla pede ullamcorper augue, a suscipit nulla elit ac nulla.', '3420096523-7', 14, 10, 2, 2, 1, 1, 'kids');
+  insert into products (name, description, code, price, resell, stock_id, interest_id, supply_id, time_id, category) values ('Air Max Plus Supreme Black', 'A beautiful colourway designed by one of the hyped brands of the 21st century.', '3420096523-7', 120, 180, 2, 2, 1, 1, 'kids');
 
-  insert into products (name, description, code, price, resell, stock_id, interest_id, supply_id, time_id, category) values ('Air Force 1 Black', 'Nam ultrices, libero non mattis pulvinar, nulla pede ullamcorper augue, a suscipit nulla elit ac nulla.', '3420096523-7', 14, 10, 2, 2, 1, 1, 'kids');
+  insert into products (name, description, code, price, resell, stock_id, interest_id, supply_id, time_id, category) values ('Air Force 1 Black', 'A iconic design with a matt black finish.', '3420096523-7', 80, 50, 2, 2, 1, 1, 'kids');
 
 
 --stocks
