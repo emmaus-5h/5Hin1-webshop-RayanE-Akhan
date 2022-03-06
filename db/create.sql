@@ -11,7 +11,7 @@ CREATE TABLE products (
   resell NUMERIC(10,2),
   stock_id INTEGER,
   interest_id INTEGER,
-  supply_id INTEGER,
+  supply_id VARCHAR,
   time_id INTEGER,
   category VARCHAR(255)
 );
@@ -31,7 +31,7 @@ CREATE TABLE products (
 --size n:m relatie
 CREATE TABLE supplier (
   id INTEGER PRIMARY KEY AUTOINCREMENT,
-  name VARCHAR
+  brand VARCHAR
 );
   
 --interest 1:n relatie
@@ -90,12 +90,12 @@ insert into stocks (instock) values ('Enough in stock');
   
 --interest
 insert into interest (name) values ('Popular');  
-insert into interest (name) values ('-');  
+insert into interest (name) values ('Underrated');  
   
 --supplier
-insert into supplier (name) values ('Nike');  
-insert into supplier (name) values ('Dior');  
-insert into supplier (name) values ('Adidas');  
+insert into supplier (brand) values ('Nike');  
+insert into supplier (brand) values ('Dior');  
+insert into supplier (brand) values ('Adidas');  
 
 --deliverytime
 insert into deliverytime (timedeliver) values ('3-5 business days');  
